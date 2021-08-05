@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="{% static 'app/content/icons/Logo.png' %}" alt="" height="90" width="250"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cartoons
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">First</a></li>
+                <li><a class="dropdown-item" href="#">Random</a></li>
+                <li><a class="dropdown-item" href="#">Most Recent</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    {% block content %}{% endblock %}
+     <hr/>
+    <footer>
+        <p>&copy; {{ year }} - Doc's Delirium LLC. Contact us at <a href="mailto:docsdelirium@gmail.com">docsdelirium@gmail.com</a>. <a class="Reddit mobile_soc" href="https://www.reddit.com/u/DocsDelirium"></a></p>
+    </footer>
+    <script src="{% static 'app/scripts/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

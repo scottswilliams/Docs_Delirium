@@ -1,0 +1,198 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@font-face {
+    font-family: "Wendy One";
+    src: url("../fonts/WendyOne-Regular.8f349b3ae4b0.ttf")
+}
+.navbar {
+    background-color: #05386B;
+}
+
+.navbar-inverse .navbar-brand {
+    background-image: url("../content/icons/Logo.c126e6dae41f.png");
+    width: 300px;
+    height: 120px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
+.navbar-inverse .navbar-nav > li > a {
+    top: 75px;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #5CDB95;
+}
+
+
+.navbar-nav {
+    float: right;
+    position: relative;
+    bottom: 0;
+}
+
+.navbar-nav li {
+    text-align: right;
+    font-family: 'Wendy One', sans-serif;
+    padding-right: 50px;
+    font-size: 30px;
+    display: inline-block;
+}
+.navbar-nav a {
+    height: 100px;
+    display: table-cell;
+}
+#Reddit {
+    float: right;
+    width: 100px;
+    height: 50px;
+    background-size: 30px;
+    background-image: url("../content/icons/RedditLogo.d84f6aae73f8.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 30px;
+
+}
+
+#Reddit:hover {
+    background-image: url("../content/icons/RedditLogoHover.b4d489f8002b.png");
+
+}
+.jumbotron {
+    margin-top: 50px;
+    text-align: center;
+    height: 80vh;
+    position: relative;
+}
+
+.list-cont {
+    overflow: visible;
+
+}
+
+.jumbotron ul {;
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+.jumbotron li {
+    padding: 0;
+    margin-bottom: auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.arrow_list {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.arrow {
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    border: none;
+    height: 70px;
+    width: 70px;
+    margin: 0;
+}
+.arrow_double_right {
+    background-image: url("icons/chevron-double-right.203076ff8c38.svg");
+    background-size: 100% auto;
+}
+
+.arrow_double_left {
+    background-image: url("icons/chevron-double-left.8a9c46040f56.svg");
+    background-size: 100% auto;
+}
+.arrow_right {
+    background-image: url("icons/chevron-right.cb01ceeaabac.svg");
+    background-size: 100% auto;
+    margin-left: 30px;
+}
+
+.arrow_left {
+    background-image: url("icons/chevron-left.bdde5e6db981.svg");
+    background-size: 100% auto;
+    margin-right: 30px;
+}
+
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+
+#cartoon {
+
+    height: 50vh;
+    margin: auto;
+    display: block;
+}
+
+#caption {
+    width: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+.foot {
+    color: grey;
+    margin: 0;
+}
+
+.date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+}
+

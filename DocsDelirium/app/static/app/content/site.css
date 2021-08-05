@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-family: "Titillium";
+    src: url('../fonts/TitilliumWeb-Black.ttf');
+}
+.chev-cont {
+    display: none;
+}
+@media screen and (min-width: 800px) {
+    .chev-cont {
+        display: flex;
+    }
+    .nav-item {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .navbar-collapse {
+        margin-top: 30px;
+    }
+    .navbar-brand {
+        position: absolute;
+        left: 50px;
+        top: 5px;
+    }
+    .navbar {
+        height: 15vh;
+    }
+    .navbar-nav {
+        width: 500px;
+    }
+    .nav-item {
+        width: 100px;
+    }
+
+    body {
+        background-image: url('../content/icons/petridishbg.png');
+    }
+    .about-footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        height: 70px;
+    }
+    .container-sm {
+        width: 30vw;
+        padding-top: 0 !important;
+    }
+    .arrow_control_panel {
+        display: none;
+    }
+    .chevron {
+        display: flex;
+        text-align: center;
+        height: 150px;
+        width: 150px;
+        background-size: 150px;
+    }
+    .chevron-left {
+        background-image: url('../content/icons/chevron-left.svg');
+    }
+    .chevron-right {
+        background-image: url('../content/icons/chevron-right.svg');
+    }
+    .chevron-left:hover {
+        background-image: url('../content/icons/chevron-left-hover.svg');
+    }
+
+    .chevron-right:hover {
+        background-image: url('../content/icons/chevron-right-hover.svg');
+    }
+}
+
+
+
+.navbar {
+    background-color: none;
+    padding-left: 0;
+}
+.nav-item {
+    width: 200px;
+}
+    .nav-item a {
+        font-family: "Titillium", sans-serif;
+        color: #37456B !important;
+        text-align: center;
+        border: 2px solid transparent;
+        font-size: 30px !important;
+    }
+.nav-item a:hover {
+    color: green !important;
+    border-bottom: 2px solid green;
+    box-sizing: border-box;
+}
+
+.container-sm {
+    max-width: 700px;
+
+}
+.dropdown-item {
+    border: 0 !important;
+}
+.footer {
+    position: relative;
+    display: block;
+    left: 0;
+    height:15vh;
+    width: 100%;
+    bottom: 0;
+    background: white;
+    text-align: center;
+    color: grey;
+    margin-top: 100px;
+    margin-bottom: 0 !important;
+}
+
+.footer a {
+    color: lightgrey;
+}
+
+h2 {
+    text-align: center;
+}
+
+.about p {
+    text-indent: 40px;
+}
+
+
+.caption {
+    text-align: center;
+    color: #2a344f;
+
+}
+
+.caption h4 {
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+.date {
+    color: lightgrey;
+    text-align: center;
+}
+
+.date h4 {
+    width: 100%;
+}
+
+
+.arrow {
+    display: flex;
+    border: 1px solid lightgrey;
+    background-image: url('../content/icons/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+    border-radius: 10px;
+    height: 100px;
+    width: 50%;
+}
+
+.arrow-right {
+    float: right;
+    background-image: url('../content/icons/arrow-right.svg');
+}
+
+.arrow:hover {
+    background-image: url('../content/icons/arrow-left-hover.svg');
+}
+
+.arrow-right:hover {
+    background-image: url('../content/icons/arrow-right-hover.svg');
+}
+.right {
+    float: right;
+}
+.cartoon_id {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.row {
+    flex-wrap: nowrap !important;
+}
+
+@media only screen and (min-device-width : 769px) and (max-device-width : 1366px) {
+    .container-sm {
+        width: 500px !important;
+    }
+}
+
+@media only screen and (max-device-width : 769px) {
+    .navbar {
+        padding: 0;
+        background: #fff;
+    }
+    body {
+        background: #f8f9fa;
+    }
+
+    .navbar-collapse {
+        background: white;
+    }
+
+ 
+    .arrow_control_panel {
+        padding: 0;
+        left: 0;
+        bottom:  0;
+
+    }
+    .arrow {
+        width: 100%;
+        border-radius: 0;
+    }
+    .arrow-left {
+        left: 0 !important;
+    }
+    .arrow-right {
+        right: 0 !important;
+    }
+    .cartoon_id {
+        width: 20vw;
+        left: 0;
+        padding: 0;
+        border: 1px solid lightgrey;
+    }
+    footer {
+        display: none;
+        visibility: hidden;
+    }
+
+ 
+}
+
+@media only screen and (min-device-width : 2000px) {
+    .container-sm {
+        max-width: 70vw !important;
+    }
+}

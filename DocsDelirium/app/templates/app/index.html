@@ -1,0 +1,44 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load static %}
+    <div class="container p-0">
+        <div class="row">
+            <div class="chev-cont col my-auto">
+                {% if cartoon.id != 1 %}
+                    <a class="chevron chevron-left mx-auto" href="/{{prev_cartoon}}"></a>
+                {% endif %}
+            </div>
+            <div class="col">
+                <div class="container-sm p-3 bg-light border rounded-3">
+                    <div class="row date">
+                            <h4>#{{cartoon_id}} of {{last_cartoon}}</h4>
+                        </div>
+                    <div class="row">
+                        <img class="img-fluid mx-auto" src="{% get_media_prefix %}{{cartoon.cartoon}}" alt="{{ cartoon.text_on_hover }}" title="{{ cartoon.text_on_hover }}" />
+                    </div>
+                    <div class="row caption">
+                        <h4>{{cartoon.caption}}</h4>
+                    </div>
+                    <div class="arrow_control_panel row">
+                        {% if cartoon.id != 1 %}
+                            <div class="col p-0"><a class="arrow arrow-left" href="/{{prev_cartoon}}"></a></div>
+                        {% endif %}
+                        {% if cartoon_id != last_cartoon %}
+                            <div class="col p-0"><a class="arrow arrow-right" href="/{{ next_cartoon }} "></a></div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+             <div class="chev-cont col my-auto">
+                 {% if cartoon_id != last_cartoon %}
+                    <a class="chevron chevron-right mx-auto" href="/{{next_cartoon}}"></a>
+                 {% endif %}
+             </div>
+        </div>
+    </div>
+    <div class="footer">
+     <hr/>
+        <p>&copy; {{ year }} - Doc's Delirium LLC. Contact us at <a href="mailto:docsdelirium@gmail.com">docsdelirium@gmail.com</a>.</p>
+    </div>
+{% endblock %}

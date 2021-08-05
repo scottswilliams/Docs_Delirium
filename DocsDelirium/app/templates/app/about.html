@@ -1,0 +1,13 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+<div class="container-sm about h-100 p-5 bg-light border rounded-3">
+    <h2 class="display-5 fw-bold">{{ title }}</h2>
+    <hr/>
+    <p> Doc's Delirium started in 1997 as a way for an exhausted medical resident to use the right side of his brain after 100 hours a week using only his left. It was intended only for his sanity and never for public consumption. When kids came along (5!) any free time disappeared, and cartooning ended for almost two decades. COVID closed Doc's clinic for 6 weeks giving him a respite to start cartooning again. Encouraged by his children, DocsDelirium.com was born. Here is a sample of them to give you a taste. More to come in the future. Hope you get a chuckle!</p>
+</div>
+<footer class="about-footer">
+<hr/>
+<p>&copy; {{ year }} - Doc's Delirium LLC. Contact us at <a href="mailto:docsdelirium@gmail.com">docsdelirium@gmail.com</a>. <a class="Reddit mobile_soc" href="https://www.reddit.com/u/DocsDelirium"></a></p>
+</footer>
+{% endblock %}
